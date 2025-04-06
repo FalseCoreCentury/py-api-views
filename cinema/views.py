@@ -84,7 +84,7 @@ class ActorDetailList(
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
 
-    def get(self, request, *args, **kwargs) -> Genre:
+    def get(self, request, *args, **kwargs) -> Response:
         return self.retrieve(request, *args, **kwargs)
 
     def put(self, request, *args, **kwargs) -> Response:
